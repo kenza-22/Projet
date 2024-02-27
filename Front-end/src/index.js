@@ -15,10 +15,9 @@ import { MsalProvider } from '@azure/msal-react';
 
 const pca = new PublicClientApplication({
     auth: {
-        clientId: '716fa805-d117-44b8-8d9a-f6443efba185', // Correction de la casse ici
+        clientId: '716fa805-d117-44b8-8d9a-f6443efba185', 
         authority: 'https://login.microsoftonline.com/fe013626-9e98-4cbe-b49e-c5848b622c2d/oauth2/v2.0/authorize',
-        redirectUri: '/',
-        scopes: ['User.Read']
+        redirectUri:  'http://localhost:3000',
     }
 });
 
@@ -28,7 +27,9 @@ pca.addEventCallback(event => {
    console.log(event);
    pca.setActiveAccount(event.payload.account);
    }
-})
+});
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
