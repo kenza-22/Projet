@@ -21,7 +21,7 @@ export const Profile = () => {
              }); 
 
             setUserData(graphResponse.data);
-            console.log(userData);
+           // console.log(userData);
         } catch (error) {
             console.error("Error in getting user info:", error);
         }
@@ -40,7 +40,7 @@ export const Profile = () => {
           });
           const groups = graphResponse.data.value.map(group => group.displayName);
           setUserGroups(groups);
-          console.log(groups);
+          console.log(userGroups);
         } catch (error) {
           console.error('Error fetching user groups:', error);
         }
