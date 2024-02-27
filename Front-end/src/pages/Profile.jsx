@@ -5,7 +5,8 @@ import { useMsal } from "@azure/msal-react";
 export const Profile = () => {
     const [userData, setUserData] = useState(null);
     const { instance } = useMsal();
-    const [isInitialized, setIsInitialized] = useState(false)
+    const [isInitialized, setIsInitialized] = useState(false);
+    const [userGroups, setUserGroups] = useState([]);
     const getUserInfo = async () => {
         try {
 
@@ -20,10 +21,31 @@ export const Profile = () => {
              }); 
 
             setUserData(graphResponse.data);
+            console.log(userData);
         } catch (error) {
             console.error("Error in getting user info:", error);
         }
     };
+
+
+    const getUserGroups = async () => {
+        try {
+            const response = await instance.acquireTokenSilent({
+                scopes: ["Group.Read.All"]
+            });
+          const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me/memberOf', {
+            headers: {
+              Authorization: `Bearer ${response.accessToken}`
+            }
+          });
+          const groups = graphResponse.data.value.map(group => group.displayName);
+          setUserGroups(groups);
+          console.log(groups);
+        } catch (error) {
+          console.error('Error fetching user groups:', error);
+        }
+      };
+    
 
     useEffect(() => {
         if (instance) {
@@ -35,6 +57,7 @@ export const Profile = () => {
         if (isInitialized) {
             setTimeout(() => {
                 getUserInfo();
+                getUserGroups();
             });
         }
     }, [isInitialized]);
@@ -44,15 +67,14 @@ export const Profile = () => {
             <NavBar />
 
             {userData && (
-                <div style={{justifyContent: 'center', alignItems: 'center' }}>
-                    <h2>User Information</h2>
+               
+                <div style={{justifyContent: 'center', alignItems: 'center', marginTop: '50px'}}>
                     <p><strong>First Name: </strong> {userData.givenName}</p>
                     <p><strong>Last Name: </strong> {userData.surname}</p>
                     <p><strong>Email: </strong> {userData.mail}</p>
                     <p><strong>Id: </strong>{userData.id}</p> 
                 </div>
             )}
-
 
 
         </>
