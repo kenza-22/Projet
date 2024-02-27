@@ -21,7 +21,8 @@ export const Profile = () => {
              }); 
 
             setUserData(graphResponse.data);
-           // console.log(userData);
+            console.log(userData);
+    
         } catch (error) {
             console.error("Error in getting user info:", error);
         }
@@ -39,14 +40,14 @@ export const Profile = () => {
             }
           });
           const groups = graphResponse.data.value.map(group => group.displayName);
-          setUserGroups(groups);
-          console.log(userGroups);
+         setUserGroups(groups);
+            console.log(userGroups);
         } catch (error) {
           console.error('Error fetching user groups:', error);
         }
       };
     
-
+  
     useEffect(() => {
         if (instance) {
             setIsInitialized(true);
@@ -61,20 +62,46 @@ export const Profile = () => {
             });
         }
     }, [isInitialized]);
+    
     return (
         <>
 
-            <NavBar />
+            <NavBar userGroups={userGroups}/>
 
             {userData && (
-               
-                <div style={{justifyContent: 'center', alignItems: 'center', marginTop: '50px'}}>
-                    <p><strong>First Name: </strong> {userData.givenName}</p>
-                    <p><strong>Last Name: </strong> {userData.surname}</p>
-                    <p><strong>Email: </strong> {userData.mail}</p>
-                    <p><strong>Id: </strong>{userData.id}</p> 
-                </div>
-            )}
+    <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '150px',
+        marginRight: '460px',
+        padding: '20px',
+        backgroundColor: '#ffffff',
+        borderRadius: '10px',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        borderLeft: '6px solid #007bff', 
+        maxWidth: '400px', 
+    }}>
+        <h2 style={{
+            marginBottom: '20px',
+            color: '#007bff', 
+            borderBottom: '2px solid #007bff', 
+            paddingBottom: '10px', 
+        }}>User Information</h2>
+        <div style={{ marginBottom: '10px' }}>
+            <strong>First Name:</strong> {userData.givenName}
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+            <strong>Last Name:</strong> {userData.surname}
+        </div>
+        <div style={{ marginBottom: '10px' }}>
+            <strong>Email:</strong> {userData.mail}
+        </div>
+        <div>
+            <strong>Id:</strong> {userData.id}
+        </div>
+    </div>
+)}
 
 
         </>

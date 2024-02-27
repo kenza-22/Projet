@@ -10,7 +10,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-const NavBar = () => {
+const NavBar = ({ userGroups }) => {
     const IsAuthenticated = useIsAuthenticated();
     const navigate = useNavigate();
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -40,15 +40,24 @@ const NavBar = () => {
             anchor="left"
             open={openDrawer}
          onClose={handleDrawerClose} >
-                          <List>
+                           <List>
                             {IsAuthenticated && (
                                 <>
-                                    <ListItem button onClick={() => {}}>
-                                        <ListItemText primary="Dashboards" />
-                                    </ListItem>
-                                    <ListItem button onClick={() => {}}>
-                                        <ListItemText primary="KPI" />
-                                    </ListItem>
+                                    {userGroups.includes('Admin') && (
+                                        <>
+                                            <ListItem button onClick={() => {}}>
+                                                <ListItemText primary="Dashboards" />
+                                            </ListItem>
+                                            <ListItem button onClick={() => {}}>
+                                                <ListItemText primary="KPI" />
+                                            </ListItem>
+                                        </>
+                                    )}
+                                    {!userGroups.includes('Admin') && (
+                                        <ListItem button onClick={() => {}}>
+                                            <ListItemText primary="Dashboards" />
+                                        </ListItem>
+                                    )}
                                 </>
                             )}
                         </List>

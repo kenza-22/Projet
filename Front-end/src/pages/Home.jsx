@@ -10,7 +10,7 @@ export const Home = () => {
             <AuthenticatedTemplate>
             <Typography variant="h6" style={{marginTop: '60px'}}>You are signed-in. Select profile to see your informations.</Typography>
             </AuthenticatedTemplate>  
-        <NavBar />    
+        <NavBar/>    
         </>
     );
 }
