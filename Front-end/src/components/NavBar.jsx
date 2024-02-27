@@ -11,9 +11,6 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
     const IsAuthenticated = useIsAuthenticated();
     const navigate = useNavigate();
-    const handleProfileClick = () => {
-      navigate('/profile');
-  };
     return (
         <div style={{ flexGrow: 1 }}>
             <AppBar>
@@ -23,14 +20,13 @@ const NavBar = () => {
             edge="start"
             color="inherit"
             aria-label="menu"
-            onClick={handleProfileClick}
             sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
           <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
                     {IsAuthenticated ? <WelcomeName /> : null}
-                    {IsAuthenticated ? <IconButton size="large"  aria-label="account of current user"  aria-controls="menu-appbar" aria-haspopup="true" color="inherit" >
+                    {IsAuthenticated ? <IconButton size="large"  aria-label="account of current user"  aria-controls="menu-appbar" aria-haspopup="true" color="inherit" onClick={() => navigate('/profile')}>
                         <AccountCircle />
                         </IconButton> : null}
                     {IsAuthenticated ? <SignOutButton /> : <SignInButton />}

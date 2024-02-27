@@ -9,7 +9,6 @@ export const WelcomeName = () => {
      const currentAccount = instance.getActiveAccount();//obtenir le compte actuellement connecté 
 
      if (currentAccount){
-      console.log(currentAccount);
        SetUserName(currentAccount.name)
      }
     }, [instance]);

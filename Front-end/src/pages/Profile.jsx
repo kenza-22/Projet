@@ -5,7 +5,7 @@ import { useMsal } from "@azure/msal-react";
 export const Profile = () => {
     const [userData, setUserData] = useState(null);
     const { instance } = useMsal();
-    const[isInitialized,setIsInitialized]=useState(false)
+    const [isInitialized, setIsInitialized] = useState(false)
     const getUserInfo = async () => {
         try {
 
@@ -13,13 +13,13 @@ export const Profile = () => {
                 scopes: ["User.Read"]
             });
 
-            /*  const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me', {
+              const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me', {
                  headers: {
                      Authorization: `Bearer ${response.accessToken}`
                  }
-             }); */
+             }); 
 
-            //setUserData(graphResponse.data);
+            setUserData(graphResponse.data);
         } catch (error) {
             console.error("Error in getting user info:", error);
         }
@@ -33,21 +33,23 @@ export const Profile = () => {
 
     useEffect(() => {
         if (isInitialized) {
-            getUserInfo();
+            setTimeout(() => {
+                getUserInfo();
+            });
         }
     }, [isInitialized]);
     return (
         <>
 
-            <h1 style={{ marginTop: '60px' }}>You are in profile page</h1>
             <NavBar />
 
             {userData && (
-                <div>
+                <div style={{justifyContent: 'center', alignItems: 'center' }}>
                     <h2>User Information</h2>
-                    <p>Name: {userData.displayName}</p>
-                    <p>Email: {userData.Email}</p>
-                    <p>Id: {userData.id}</p>
+                    <p><strong>First Name: </strong> {userData.givenName}</p>
+                    <p><strong>Last Name: </strong> {userData.surname}</p>
+                    <p><strong>Email: </strong> {userData.mail}</p>
+                    <p><strong>Id: </strong>{userData.id}</p> 
                 </div>
             )}
 
