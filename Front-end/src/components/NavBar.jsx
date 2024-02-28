@@ -9,12 +9,14 @@ import { useIsAuthenticated} from "@azure/msal-react";
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-const NavBar = ({ userGroups }) => {
+import {useState, useContext} from "react";
+import { UserContext } from "../pages/Profile";
+
+const NavBar = () => {
     const IsAuthenticated = useIsAuthenticated();
     const navigate = useNavigate();
     const [openDrawer, setOpenDrawer] = useState(false);
-
+    const {userGroups} = useContext(UserContext);
     const handleDrawerOpen = () => {
         setOpenDrawer(true);
     };
@@ -42,23 +44,24 @@ const NavBar = ({ userGroups }) => {
          onClose={handleDrawerClose} >
                            <List>
                             {IsAuthenticated && (
-                                <>
-                                    {userGroups.includes('Admin') && (
-                                        <>
-                                            <ListItem button onClick={() => {}}>
-                                                <ListItemText primary="Dashboards" />
-                                            </ListItem>
-                                            <ListItem button onClick={() => {}}>
-                                                <ListItemText primary="KPI" />
-                                            </ListItem>
-                                        </>
-                                    )}
-                                    {!userGroups.includes('Admin') && (
-                                        <ListItem button onClick={() => {}}>
-                                            <ListItemText primary="Dashboards" />
-                                        </ListItem>
-                                    )}
-                                </>
+                               <div className="sidebar">
+                               {userGroups === "Admin" ?(
+                                 <>
+                                   <ListItem button onClick={() => {}}>
+                                     <ListItemText primary="Dashboards" />
+                                   </ListItem>
+                                   <ListItem button onClick={() => {}}>
+                                     <ListItemText primary="KPI" />
+                                   </ListItem>
+                                 </>
+                               ) : (
+                                 <>
+                                   <ListItem button onClick={() => {}}>
+                                     <ListItemText primary="Dashboards" />
+                                   </ListItem>
+                                 </>
+                               )}
+                             </div>
                             )}
                         </List>
                     </Drawer>

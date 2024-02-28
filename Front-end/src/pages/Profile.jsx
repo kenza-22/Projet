@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import axios from "axios";
-import NavBar from "../components/NavBar";
 import { useMsal } from "@azure/msal-react";
+export const UserContext = createContext ();
 export const Profile = () => {
     const [userData, setUserData] = useState(null);
     const { instance } = useMsal();
     const [isInitialized, setIsInitialized] = useState(false);
-    const [userGroups, setUserGroups] = useState([]);
+    const [userGroups, setUserGroups] = useState(null);
     const getUserInfo = async () => {
         try {
 
@@ -21,7 +21,6 @@ export const Profile = () => {
              }); 
 
             setUserData(graphResponse.data);
-            console.log(userData);
     
         } catch (error) {
             console.error("Error in getting user info:", error);
@@ -40,8 +39,8 @@ export const Profile = () => {
             }
           });
           const groups = graphResponse.data.value.map(group => group.displayName);
-         setUserGroups(groups);
-            console.log(userGroups);
+          const group = groups.join(" "); //convertion en une chaine de caractères
+         setUserGroups(group);
         } catch (error) {
           console.error('Error fetching user groups:', error);
         }
@@ -62,12 +61,8 @@ export const Profile = () => {
             });
         }
     }, [isInitialized]);
-    
     return (
-        <>
-
-            <NavBar userGroups={userGroups}/>
-
+        <UserContext.Provider value= {userGroups}>
             {userData && (
     <div style={{
         display: 'flex',
@@ -103,7 +98,6 @@ export const Profile = () => {
     </div>
 )}
 
-
-        </>
+</UserContext.Provider>
     )
 }
