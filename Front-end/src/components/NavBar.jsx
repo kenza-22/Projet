@@ -16,7 +16,7 @@ const NavBar = () => {
     const IsAuthenticated = useIsAuthenticated();
     const navigate = useNavigate();
     const [openDrawer, setOpenDrawer] = useState(false);
-    const {userGroups} = useContext(UserContext);
+    const userGroups = useContext(UserContext);
     const handleDrawerOpen = () => {
         setOpenDrawer(true);
     };
