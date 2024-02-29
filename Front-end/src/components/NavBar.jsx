@@ -10,7 +10,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
 import {useState, useContext} from "react";
-import { UserContext } from "../pages/Profile";
+import { UserContext } from "../App";
 
 const NavBar = () => {
     const IsAuthenticated = useIsAuthenticated();
@@ -56,11 +56,14 @@ const NavBar = () => {
                                  </>
                                ) : (
                                  <>
-                                   <ListItem button onClick={() => {}}>
+                                 <ListItem button onClick={() => {}}>
                                      <ListItemText primary="Dashboards" />
                                    </ListItem>
                                  </>
                                )}
+                                <ListItem button onClick={() => {}}>
+                                     <ListItemText primary={userGroups} />
+                                   </ListItem>
                              </div>
                             )}
                         </List>

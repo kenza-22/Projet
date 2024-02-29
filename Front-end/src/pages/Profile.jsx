@@ -1,12 +1,10 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect} from "react";
 import axios from "axios";
 import { useMsal } from "@azure/msal-react";
-export const UserContext = createContext ();
 export const Profile = () => {
     const [userData, setUserData] = useState(null);
     const { instance } = useMsal();
     const [isInitialized, setIsInitialized] = useState(false);
-    const [userGroups, setUserGroups] = useState(null);
     const getUserInfo = async () => {
         try {
 
@@ -28,25 +26,8 @@ export const Profile = () => {
     };
 
 
-    const getUserGroups = async () => {
-        try {
-            const response = await instance.acquireTokenSilent({
-                scopes: ["Group.Read.All"]
-            });
-          const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me/memberOf', {
-            headers: {
-              Authorization: `Bearer ${response.accessToken}`
-            }
-          });
-          const groups = graphResponse.data.value.map(group => group.displayName);
-          const group = groups.join(" "); //convertion en une chaine de caractères
-         setUserGroups(group);
-        } catch (error) {
-          console.error('Error fetching user groups:', error);
-        }
-      };
     
-  
+
     useEffect(() => {
         if (instance) {
             setIsInitialized(true);
@@ -57,12 +38,11 @@ export const Profile = () => {
         if (isInitialized) {
             setTimeout(() => {
                 getUserInfo();
-                getUserGroups();
             });
         }
     }, [isInitialized]);
     return (
-        <UserContext.Provider value= {userGroups}>
+        <>
             {userData && (
     <div style={{
         display: 'flex',
@@ -98,6 +78,6 @@ export const Profile = () => {
     </div>
 )}
 
-</UserContext.Provider>
+</>
     )
 }
