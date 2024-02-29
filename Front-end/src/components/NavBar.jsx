@@ -5,11 +5,11 @@ import { Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { WelcomeName } from "./WelcomeName";
 import { SignInButton } from "./SignInButton";
 import { SignOutButton } from "./SignOutButton";
-import { useIsAuthenticated} from "@azure/msal-react";
+import { useIsAuthenticated } from "@azure/msal-react";
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
-import {useState, useContext} from "react";
+import { useState, useContext, useEffect } from "react";
 import { UserContext } from "../App";
 
 const NavBar = () => {
@@ -17,6 +17,8 @@ const NavBar = () => {
     const navigate = useNavigate();
     const [openDrawer, setOpenDrawer] = useState(false);
     const userGroups = useContext(UserContext);
+    const [isAdmin, setIsAdmin] = useState(false)
+
     const handleDrawerOpen = () => {
         setOpenDrawer(true);
     };
@@ -24,56 +26,69 @@ const NavBar = () => {
     const handleDrawerClose = () => {
         setOpenDrawer(false);
     };
+
+/*     const checkRole = () => {
+        if (userGroups == 'Admin') {
+            setIsAdmin(true)
+            console.log(userGroups == 'Admin')
+        }
+        console.log(userGroups == 'Admin')
+
+        console.log(userGroups)
+        console.log(isAdmin)
+    }
+
+    useEffect(() => {
+        if (userGroups)
+            checkRole()
+    }, [userGroups]) */
     return (
         <div style={{ flexGrow: 1 }}>
             <AppBar>
                 <Toolbar>
-                <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-             onClick={handleDrawerOpen}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Drawer
-            anchor="left"
-            open={openDrawer}
-         onClose={handleDrawerClose} >
-                           <List>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                        onClick={handleDrawerOpen}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Drawer
+                        anchor="left"
+                        open={openDrawer}
+                        onClose={handleDrawerClose} >
+                        <List>
                             {IsAuthenticated && (
-                               <div className="sidebar">
-                               {userGroups === "Admin" ?(
-                                 <>
-                                   <ListItem button onClick={() => {}}>
-                                     <ListItemText primary="Dashboards" />
-                                   </ListItem>
-                                   <ListItem button onClick={() => {}}>
-                                     <ListItemText primary="KPI" />
-                                   </ListItem>
-                                 </>
-                               ) : (
-                                 <>
-                                 <ListItem button onClick={() => {}}>
-                                     <ListItemText primary="Dashboards" />
-                                   </ListItem>
-                                 </>
-                               )}
-                                <ListItem button onClick={() => {}}>
-                                     <ListItemText primary={userGroups} />
-                                   </ListItem>
-                             </div>
+                                <div className="sidebar">
+                                    {userGroups === 'Admin' ? (
+                                        <>
+                                            <ListItem button onClick={() => { }}>
+                                                <ListItemText primary="Dashboards" />
+                                            </ListItem>
+                                            <ListItem button onClick={() => { }}>
+                                                <ListItemText primary="KPI" />
+                                            </ListItem>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <ListItem button onClick={() => { }}>
+                                                <ListItemText primary="Dashboards" />
+                                            </ListItem>
+                                        </>
+                                    )}
+                                </div>
                             )}
                         </List>
                     </Drawer>
-          <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
-                    {IsAuthenticated ? <WelcomeName /> : null}
-                    {IsAuthenticated ? <IconButton size="large"  aria-label="account of current user"  aria-controls="menu-appbar" aria-haspopup="true" color="inherit" onClick={() => navigate('/profile')}>
-                        <AccountCircle />
+                    <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+                        {IsAuthenticated ? <WelcomeName /> : null}
+                        {IsAuthenticated ? <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit" onClick={() => navigate('/profile')}>
+                            <AccountCircle />
                         </IconButton> : null}
-                    {IsAuthenticated ? <SignOutButton /> : <SignInButton />}
+                        {IsAuthenticated ? <SignOutButton /> : <SignInButton />}
                     </div>
                 </Toolbar>
             </AppBar>

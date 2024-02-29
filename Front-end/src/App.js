@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { useMsal } from "@azure/msal-react";
-export const UserContext = createContext ();
+export const UserContext = createContext();
 function App() {
     const [userGroups, setUserGroups] = useState(null);
     const [isInitialized, setIsInitialized] = useState(false);
@@ -16,19 +16,19 @@ function App() {
             const response = await instance.acquireTokenSilent({
                 scopes: ["Group.Read.All"]
             });
-          const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me/memberOf', {
-            headers: {
-              Authorization: `Bearer ${response.accessToken}`
-            }
-          });
-          const groups = graphResponse.data.value.map(group => group.displayName);
-          const group = groups.join(" "); //convertion en une chaine de caractères
-         setUserGroups(group);
+            const graphResponse = await axios.get('https://graph.microsoft.com/v1.0/me/memberOf', {
+                headers: {
+                    Authorization: `Bearer ${response.accessToken}`
+                }
+            });
+            const groups = graphResponse.data.value.map(group => group.displayName);
+            const group = groups.join(""); //convertion en une chaine de caractères
+            setUserGroups(group);
         } catch (error) {
-          console.error('Error fetching user groups:', error);
+            console.error('Error fetching user groups:', error);
         }
-      };
-      useEffect(() => {
+    };
+    useEffect(() => {
         if (instance) {
             setIsInitialized(true);
         }
@@ -36,30 +36,28 @@ function App() {
 
     useEffect(() => {
         if (isInitialized) {
-            setTimeout(() => {
-                getUserGroups();
-            });
+            getUserGroups();
         }
     }, [isInitialized]);
     const Layout = () => {
-        return(
+        return (
             <>
-            <UserContext.Provider value= {userGroups}>
-            <NavBar/> 
-            <Outlet/>
-            </UserContext.Provider>
+                <UserContext.Provider value={ userGroups }>
+                    <NavBar />
+                    <Outlet />
+                </UserContext.Provider>
             </>
         );
     }
     return (
-            <Grid container justifyContent="center">
-                <Routes>
-                    <Route element={<Layout/>}>
+        <Grid container justifyContent="center">
+            <Routes>
+                <Route element={<Layout />}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/profile" element={<Profile/>} /> 
-                    </Route>
-                </Routes>
-            </Grid>
+                    <Route path="/profile" element={<Profile />} />
+                </Route>
+            </Routes>
+        </Grid>
     );
 }
 
