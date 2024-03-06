@@ -1,6 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
-
+const fs = require('fs');
 const username = process.env.ATLASSIAN_USERNAME;
 const password = process.env.ATLASSIAN_API_KEY;
 const domain = process.env.DOMAIN;
@@ -51,18 +51,26 @@ exports.getAllSprints = async (req, res) => {
           const sprintsResponse = await axios.request(sprintsConfig);
           const sprints = sprintsResponse.data.values;
   
-          // Ajouter le nom du projet à chaque sprint pour savoir chaque sprint appartient à quel projet 
-          const sprintsWithProjectId = sprints.map(sprint => ({
+          // Ajouter le nom du projet à chaque sprint
+          const sprintsWithProjectName = sprints.map(sprint => ({
             ...sprint,
             projectName: project.name
           }));
   
-          allSprints.push(...sprintsWithProjectId);
+          allSprints.push(...sprintsWithProjectName);
         }
       }
-  
-      res.json(allSprints);
-      console.log('Sprints récupérés avec succès:', allSprints);
+      
+      const jsonData = allSprints;
+      const jsonString = JSON.stringify(jsonData, null, 2);
+      fs.writeFile('sprints.json', jsonString, 'utf8', (err) => {
+        if (err) {
+          console.error('Erreur lors de l\'écriture du fichier :', err);
+          return;
+        }
+        console.log('Les données ont été écrites dans le fichier sprints.json');
+        res.json(allSprints);
+      });
     } catch (error) {
       console.log('Erreur:', error);
       res.status(500).json({ error: error.message });

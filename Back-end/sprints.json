@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "self": "https://kenzabaccar6.atlassian.net/rest/agile/1.0/sprint/1",
+    "state": "active",
+    "name": "Tableau Sprint 1",
+    "startDate": "2024-02-19T08:00:00.000Z",
+    "endDate": "2024-03-04T08:00:00.000Z",
+    "createdDate": "2024-02-13T14:29:32.424Z",
+    "originBoardId": 1,
+    "goal": "To deliver search function",
+    "projectName": "Conception db"
+  },
+  {
+    "id": 2,
+    "self": "https://kenzabaccar6.atlassian.net/rest/agile/1.0/sprint/2",
+    "state": "future",
+    "name": "Tableau Sprint 2",
+    "createdDate": "2024-02-14T11:10:25.511Z",
+    "originBoardId": 1,
+    "projectName": "Conception db"
+  },
+  {
+    "id": 3,
+    "self": "https://kenzabaccar6.atlassian.net/rest/agile/1.0/sprint/3",
+    "state": "closed",
+    "name": "Tableau Sprint 1",
+    "startDate": "2024-03-06T08:58:27.820Z",
+    "endDate": "2024-03-20T08:58:20.000Z",
+    "completeDate": "2024-03-06T08:59:17.879Z",
+    "createdDate": "2024-02-14T11:22:48.154Z",
+    "originBoardId": 2,
+    "goal": "",
+    "projectName": "test"
+  },
+  {
+    "id": 4,
+    "self": "https://kenzabaccar6.atlassian.net/rest/agile/1.0/sprint/4",
+    "state": "closed",
+    "name": "Tableau Sprint 2",
+    "startDate": "2024-03-06T08:59:41.161Z",
+    "endDate": "2024-04-03T08:58:20.000Z",
+    "completeDate": "2024-03-06T09:00:22.899Z",
+    "createdDate": "2024-03-06T08:59:17.939Z",
+    "originBoardId": 2,
+    "goal": "",
+    "projectName": "test"
+  },
+  {
+    "id": 5,
+    "self": "https://kenzabaccar6.atlassian.net/rest/agile/1.0/sprint/5",
+    "state": "future",
+    "name": "Tableau Sprint 3",
+    "createdDate": "2024-03-06T09:00:23.025Z",
+    "originBoardId": 2,
+    "projectName": "test"
+  }
+]

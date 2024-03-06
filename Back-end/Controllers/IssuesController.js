@@ -1,3 +1,4 @@
+const fs = require('fs');
 var axios = require('axios');
 require('dotenv').config();
 
@@ -23,35 +24,21 @@ exports.getIssues= async (req,res) => {
       auth: auth
     };
     const response = await axios.request(config);
-    const totalIssues = response.data.issues.length;
-    const responseData = {
-        totalIssues: totalIssues,
-        issues: response.data
-      };
-  
-    res.json(responseData);
-    console.log(responseData);
+    
+    const jsonData = response.data;
+    const jsonString = JSON.stringify(jsonData, null, 2);
+    fs.writeFile('issues.json', jsonString, 'utf8', (err) => {
+      if (err) {
+        console.error('Erreur lors de l\'écriture du fichier :', err);
+        return;
+      }
+      console.log('Les données ont été écrites dans le fichier issues.json');
+      res.json(response.data);
+    });
+
   } catch (error) {
     console.log('error: ', error)
     res.status(500).json({ error: error.message });
   }
 }
 
-exports.getIssuesByKey = async (req,res,next) => {
-  const issueKey = req.params.issueKey;
-  try{
-    const baseUrl = 'https://' + domain + '.atlassian.net';
-    const config = {
-      method: 'get',
-      url: baseUrl + '/rest/api/2/issue/' + issueKey,
-      headers: { 'Content-Type': 'application/json' },
-      auth: auth
-    };
-    const response = await axios.request(config);
-    res.json(response.data);
-    console.log(response.data);
-  } catch (error){
-    console.log('error: ', error);
-    res.status(500).json({ error: error.message });
-  }
-}

@@ -1,0 +1,42 @@
+[
+  {
+    "expand": "description,lead,issueTypes,url,projectKeys,permissions,insight",
+    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10002",
+    "id": "10002",
+    "key": "TEST",
+    "name": "test",
+    "avatarUrls": {
+      "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407",
+      "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=small",
+      "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=xsmall",
+      "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=medium"
+    },
+    "projectTypeKey": "software",
+    "simplified": true,
+    "style": "next-gen",
+    "isPrivate": false,
+    "properties": {},
+    "entityId": "cd434684-f858-4fe9-b897-556dca7cdf0e",
+    "uuid": "cd434684-f858-4fe9-b897-556dca7cdf0e"
+  },
+  {
+    "expand": "description,lead,issueTypes,url,projectKeys,permissions,insight",
+    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10001",
+    "id": "10001",
+    "key": "CON",
+    "name": "Conception db",
+    "avatarUrls": {
+      "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414",
+      "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=small",
+      "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=xsmall",
+      "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=medium"
+    },
+    "projectTypeKey": "software",
+    "simplified": true,
+    "style": "next-gen",
+    "isPrivate": false,
+    "properties": {},
+    "entityId": "2faab9c5-af50-4e72-9444-5afe4ae3c65b",
+    "uuid": "2faab9c5-af50-4e72-9444-5afe4ae3c65b"
+  }
+]
