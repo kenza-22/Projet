@@ -17,7 +17,7 @@ const NavBar = () => {
     const navigate = useNavigate();
     const [openDrawer, setOpenDrawer] = useState(false);
     const userGroups = useContext(UserContext);
-    const [isAdmin, setIsAdmin] = useState(false)
+    
 
     const handleDrawerOpen = () => {
         setOpenDrawer(true);
@@ -27,26 +27,12 @@ const NavBar = () => {
         setOpenDrawer(false);
     };
 
-/*     const checkRole = () => {
-        if (userGroups == 'Admin') {
-            setIsAdmin(true)
-            console.log(userGroups == 'Admin')
-        }
-        console.log(userGroups == 'Admin')
 
-        console.log(userGroups)
-        console.log(isAdmin)
-    }
-
-    useEffect(() => {
-        if (userGroups)
-            checkRole()
-    }, [userGroups]) */
     return (
         <div style={{ flexGrow: 1 }}>
             <AppBar>
                 <Toolbar>
-                    <IconButton
+                   {IsAuthenticated ? <IconButton
                         size="large"
                         edge="start"
                         color="inherit"
@@ -55,7 +41,7 @@ const NavBar = () => {
                         onClick={handleDrawerOpen}
                     >
                         <MenuIcon />
-                    </IconButton>
+                    </IconButton>: null}
                     <Drawer
                         anchor="left"
                         open={openDrawer}
