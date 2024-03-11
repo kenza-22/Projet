@@ -2,8 +2,175 @@
   "expand": "schema,names",
   "startAt": 0,
   "maxResults": 50,
-  "total": 10,
+  "total": 14,
   "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+      "id": "10017",
+      "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10017",
+      "key": "TEST-5",
+      "fields": {
+        "statuscategorychangedate": "2024-03-11T12:27:34.440+0100",
+        "issuetype": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10009",
+          "id": "10009",
+          "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "entityId": "094cbe3a-d9dc-4b14-8654-7e7d9641acb1",
+          "hierarchyLevel": 0
+        },
+        "timespent": null,
+        "customfield_10030": null,
+        "project": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10002",
+          "id": "10002",
+          "key": "TEST",
+          "name": "test",
+          "projectTypeKey": "software",
+          "simplified": true,
+          "avatarUrls": {
+            "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407",
+            "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=small",
+            "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=xsmall",
+            "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10407?size=medium"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10027": null,
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-5/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "created": "2024-03-11T12:27:33.789+0100",
+        "customfield_10020": [
+          {
+            "id": 5,
+            "name": "Tableau Sprint 3",
+            "state": "future",
+            "boardId": 2
+          }
+        ],
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "priority": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "customfield_10026": null,
+        "labels": [],
+        "customfield_10016": 7,
+        "customfield_10017": null,
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "Le lien parent est uniquement disponible pour les utilisateurs Jira Premium."
+          }
+        },
+        "customfield_10019": "0|i00027:",
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": null,
+        "updated": "2024-03-11T12:27:34.475+0100",
+        "status": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10006",
+          "description": "",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/",
+          "name": "À faire",
+          "id": "10006",
+          "statusCategory": {
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "A faire"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10008": null,
+        "customfield_10009": null,
+        "aggregatetimeestimate": null,
+        "summary": "testtt",
+        "creator": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-5/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
     {
       "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
       "id": "10013",
@@ -51,12 +218,12 @@
         "customfield_10029": null,
         "resolutiondate": "2024-03-06T09:59:51.329+0100",
         "workratio": -1,
-        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-4/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": null,
         "created": "2024-03-06T09:57:44.687+0100",
         "customfield_10020": [
           {
@@ -91,8 +258,8 @@
         "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": "10008_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_126667",
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -104,8 +271,8 @@
           }
         },
         "customfield_10019": "0|i0001a:",
-        "aggregatetimeoriginalestimate": null,
         "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -237,12 +404,12 @@
         "customfield_10029": null,
         "resolutiondate": "2024-03-06T09:59:56.831+0100",
         "workratio": -1,
-        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-3/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": null,
         "created": "2024-03-06T09:57:38.125+0100",
         "customfield_10020": [
           {
@@ -290,8 +457,8 @@
           }
         },
         "customfield_10019": "0|i0001d:",
-        "aggregatetimeoriginalestimate": null,
         "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -318,11 +485,11 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": null,
+        "security": null,
         "customfield_10008": null,
-        "customfield_10009": null,
         "aggregatetimeestimate": null,
+        "customfield_10009": null,
         "summary": "interface admin",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -423,12 +590,12 @@
         "customfield_10029": null,
         "resolutiondate": "2024-03-06T09:59:50.079+0100",
         "workratio": -1,
-        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-2/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": null,
         "created": "2024-03-06T09:57:16.741+0100",
         "customfield_10020": [
           {
@@ -463,8 +630,8 @@
         "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": "10008_*:*_2_*:*_19493_*|*_10006_*:*_1_*:*_153367",
-        "customfield_10026": null,
         "labels": [],
+        "customfield_10026": null,
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -476,8 +643,8 @@
           }
         },
         "customfield_10019": "0|i00017:",
-        "timeestimate": null,
         "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -507,8 +674,8 @@
         "security": null,
         "customfield_10007": null,
         "customfield_10008": null,
-        "customfield_10009": null,
         "aggregatetimeestimate": null,
+        "customfield_10009": null,
         "summary": "tessst",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -690,8 +857,8 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "customfield_10007": null,
         "security": null,
+        "customfield_10007": null,
         "customfield_10008": null,
         "aggregatetimeestimate": null,
         "customfield_10009": null,
@@ -750,6 +917,673 @@
     },
     {
       "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+      "id": "10016",
+      "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10016",
+      "key": "CON-13",
+      "fields": {
+        "statuscategorychangedate": "2024-03-11T11:32:31.214+0100",
+        "issuetype": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "entityId": "d11539a6-c1c1-4083-9e38-18f3adb5b1e3",
+          "hierarchyLevel": 0
+        },
+        "parent": {
+          "id": "10015",
+          "key": "CON-12",
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10015",
+          "fields": {
+            "summary": "Develop Functionality",
+            "status": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+              "description": "",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/",
+              "name": "À faire",
+              "id": "10003",
+              "statusCategory": {
+                "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "A faire"
+              }
+            },
+            "priority": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10007",
+              "id": "10007",
+              "description": "Une collection de bugs, stories et tâches connexes.",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10307,
+              "entityId": "472e13e4-fdd8-4c47-9238-39f1145ecc8e",
+              "hierarchyLevel": 1
+            }
+          }
+        },
+        "timespent": null,
+        "customfield_10030": null,
+        "project": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10001",
+          "id": "10001",
+          "key": "CON",
+          "name": "Conception db",
+          "projectTypeKey": "software",
+          "simplified": true,
+          "avatarUrls": {
+            "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414",
+            "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=small",
+            "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=xsmall",
+            "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=medium"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10027": null,
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "watches": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-13/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "lastViewed": "2024-03-11T12:25:37.042+0100",
+        "created": "2024-03-11T11:32:29.873+0100",
+        "customfield_10020": [
+          {
+            "id": 2,
+            "name": "Tableau Sprint 2",
+            "state": "future",
+            "boardId": 1
+          }
+        ],
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "priority": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "customfield_10026": null,
+        "labels": [],
+        "customfield_10016": 5,
+        "customfield_10017": null,
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "Le lien parent est uniquement disponible pour les utilisateurs Jira Premium."
+          }
+        },
+        "customfield_10019": "0|i00011:",
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "10001",
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLink/10001",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "10008",
+              "key": "CON-9",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10008",
+              "fields": {
+                "summary": "create home page",
+                "status": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+                  "description": "",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/",
+                  "name": "À faire",
+                  "id": "10003",
+                  "statusCategory": {
+                    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "A faire"
+                  }
+                },
+                "priority": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10003",
+                  "id": "10003",
+                  "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "entityId": "d11539a6-c1c1-4083-9e38-18f3adb5b1e3",
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "assignee": null,
+        "updated": "2024-03-11T11:33:26.206+0100",
+        "status": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+          "description": "",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/",
+          "name": "À faire",
+          "id": "10003",
+          "statusCategory": {
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "A faire"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "test test",
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10008": null,
+        "customfield_10009": null,
+        "aggregatetimeestimate": null,
+        "summary": "testtttt",
+        "creator": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-13/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+      "id": "10015",
+      "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10015",
+      "key": "CON-12",
+      "fields": {
+        "statuscategorychangedate": "2024-03-08T10:18:39.454+0100",
+        "issuetype": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10007",
+          "id": "10007",
+          "description": "Une collection de bugs, stories et tâches connexes.",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "472e13e4-fdd8-4c47-9238-39f1145ecc8e",
+          "hierarchyLevel": 1
+        },
+        "timespent": null,
+        "customfield_10030": null,
+        "project": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10001",
+          "id": "10001",
+          "key": "CON",
+          "name": "Conception db",
+          "projectTypeKey": "software",
+          "simplified": true,
+          "avatarUrls": {
+            "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414",
+            "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=small",
+            "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=xsmall",
+            "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=medium"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10027": null,
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "watches": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-12/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "lastViewed": "2024-03-08T10:20:14.299+0100",
+        "created": "2024-03-08T10:18:38.880+0100",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "priority": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "labels": [],
+        "customfield_10026": null,
+        "customfield_10016": null,
+        "customfield_10017": "purple",
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "Le lien parent est uniquement disponible pour les utilisateurs Jira Premium."
+          }
+        },
+        "customfield_10019": "0|i0001z:",
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "10000",
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLink/10000",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "10008",
+              "key": "CON-9",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10008",
+              "fields": {
+                "summary": "create home page",
+                "status": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+                  "description": "",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/",
+                  "name": "À faire",
+                  "id": "10003",
+                  "statusCategory": {
+                    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "A faire"
+                  }
+                },
+                "priority": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10003",
+                  "id": "10003",
+                  "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "entityId": "d11539a6-c1c1-4083-9e38-18f3adb5b1e3",
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "assignee": null,
+        "updated": "2024-03-08T10:18:39.491+0100",
+        "status": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+          "description": "",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/",
+          "name": "À faire",
+          "id": "10003",
+          "statusCategory": {
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "A faire"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "customfield_10015": "2024-03-11",
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10008": null,
+        "customfield_10009": null,
+        "aggregatetimeestimate": null,
+        "summary": "Develop Functionality",
+        "creator": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": "2024-03-22",
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-12/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+      "id": "10014",
+      "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10014",
+      "key": "CON-11",
+      "fields": {
+        "statuscategorychangedate": "2024-03-07T16:52:55.465+0100",
+        "issuetype": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "entityId": "d11539a6-c1c1-4083-9e38-18f3adb5b1e3",
+          "hierarchyLevel": 0
+        },
+        "parent": {
+          "id": "10015",
+          "key": "CON-12",
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10015",
+          "fields": {
+            "summary": "Develop Functionality",
+            "status": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+              "description": "",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/",
+              "name": "À faire",
+              "id": "10003",
+              "statusCategory": {
+                "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "A faire"
+              }
+            },
+            "priority": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10007",
+              "id": "10007",
+              "description": "Une collection de bugs, stories et tâches connexes.",
+              "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10307,
+              "entityId": "472e13e4-fdd8-4c47-9238-39f1145ecc8e",
+              "hierarchyLevel": 1
+            }
+          }
+        },
+        "timespent": null,
+        "customfield_10030": null,
+        "project": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/project/10001",
+          "id": "10001",
+          "key": "CON",
+          "name": "Conception db",
+          "projectTypeKey": "software",
+          "simplified": true,
+          "avatarUrls": {
+            "48x48": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414",
+            "24x24": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=small",
+            "16x16": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=xsmall",
+            "32x32": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10414?size=medium"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10027": null,
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "watches": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-11/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "lastViewed": "2024-03-08T10:17:30.971+0100",
+        "created": "2024-03-07T16:52:54.847+0100",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "priority": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10023": null,
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "customfield_10026": null,
+        "labels": [],
+        "customfield_10016": 4,
+        "customfield_10017": null,
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "Le lien parent est uniquement disponible pour les utilisateurs Jira Premium."
+          }
+        },
+        "customfield_10019": "0|i0001r:",
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": null,
+        "updated": "2024-03-08T10:24:44.367+0100",
+        "status": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+          "description": "",
+          "iconUrl": "https://kenzabaccar6.atlassian.net/",
+          "name": "À faire",
+          "id": "10003",
+          "statusCategory": {
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "A faire"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "security": null,
+        "customfield_10007": null,
+        "customfield_10008": null,
+        "aggregatetimeestimate": null,
+        "customfield_10009": null,
+        "summary": "ttttttttt",
+        "creator": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "accountId": "712020:07b86da1-ca42-4f64-92dc-fd195a749aa1",
+          "emailAddress": "kenzabaccar6@gmail.com",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "24x24": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "16x16": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png",
+            "32x32": "https://secure.gravatar.com/avatar/0fb6c9fc39f49d4616757ed42ca52bff?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKB-0.png"
+          },
+          "displayName": "Kenza Baccar",
+          "active": true,
+          "timeZone": "Europe/Paris",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-11/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
       "id": "10009",
       "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10009",
       "key": "CON-10",
@@ -790,7 +1624,7 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
-        "lastViewed": "2024-03-05T10:20:56.980+0100",
+        "lastViewed": "2024-03-07T14:33:18.841+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-10/watchers",
           "watchCount": 1,
@@ -816,8 +1650,8 @@
         "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -829,8 +1663,8 @@
           }
         },
         "customfield_10019": "0|i0000p:",
-        "aggregatetimeoriginalestimate": null,
         "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -860,8 +1694,8 @@
         "security": null,
         "customfield_10007": null,
         "customfield_10008": null,
-        "aggregatetimeestimate": null,
         "customfield_10009": null,
+        "aggregatetimeestimate": null,
         "summary": "authentification",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -957,12 +1791,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
-        "lastViewed": "2024-03-01T16:57:06.997+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-9/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": "2024-03-11T09:23:32.167+0100",
         "created": "2024-02-27T09:04:48.435+0100",
         "customfield_10020": [
           {
@@ -977,18 +1811,18 @@
         ],
         "customfield_10021": null,
         "customfield_10022": null,
+        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
         "customfield_10026": null,
         "labels": [],
-        "customfield_10016": null,
+        "customfield_10016": 5,
         "customfield_10017": null,
         "customfield_10018": {
           "hasEpicLinkFieldDependency": false,
@@ -999,12 +1833,113 @@
           }
         },
         "customfield_10019": "0|i00003:",
-        "timeestimate": null,
         "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
         "versions": [],
-        "issuelinks": [],
+        "issuelinks": [
+          {
+            "id": "10000",
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLink/10000",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "10015",
+              "key": "CON-12",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10015",
+              "fields": {
+                "summary": "Develop Functionality",
+                "status": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+                  "description": "",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/",
+                  "name": "À faire",
+                  "id": "10003",
+                  "statusCategory": {
+                    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "A faire"
+                  }
+                },
+                "priority": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10007",
+                  "id": "10007",
+                  "description": "Une collection de bugs, stories et tâches connexes.",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+                  "name": "Epic",
+                  "subtask": false,
+                  "avatarId": 10307,
+                  "entityId": "472e13e4-fdd8-4c47-9238-39f1145ecc8e",
+                  "hierarchyLevel": 1
+                }
+              }
+            }
+          },
+          {
+            "id": "10001",
+            "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLink/10001",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "10016",
+              "key": "CON-13",
+              "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/10016",
+              "fields": {
+                "summary": "testtttt",
+                "status": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
+                  "description": "",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/",
+                  "name": "À faire",
+                  "id": "10003",
+                  "statusCategory": {
+                    "self": "https://kenzabaccar6.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "A faire"
+                  }
+                },
+                "priority": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issuetype/10003",
+                  "id": "10003",
+                  "description": "Une fonctionnalité exprimée sous la forme d'un objectif utilisateur.",
+                  "iconUrl": "https://kenzabaccar6.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "entityId": "d11539a6-c1c1-4083-9e38-18f3adb5b1e3",
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
         "assignee": null,
-        "updated": "2024-03-01T14:30:10.292+0100",
+        "updated": "2024-03-11T11:32:29.953+0100",
         "status": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/status/10003",
           "description": "",
@@ -1027,8 +1962,8 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": null,
+        "security": null,
         "customfield_10008": null,
         "customfield_10009": null,
         "aggregatetimeestimate": null,
@@ -1127,12 +2062,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
+        "lastViewed": "2024-02-27T09:02:42.291+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-8/watchers",
           "watchCount": 1,
           "isWatching": true
         },
-        "lastViewed": "2024-02-27T09:02:42.291+0100",
         "created": "2024-02-15T11:43:00.312+0100",
         "customfield_10020": [
           {
@@ -1144,17 +2079,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": null,
+        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1166,8 +2101,8 @@
           }
         },
         "customfield_10019": "0|i0000j:",
-        "aggregatetimeoriginalestimate": null,
         "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -1294,12 +2229,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
-        "lastViewed": "2024-02-14T16:28:47.995+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-6/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": "2024-02-14T16:28:47.995+0100",
         "created": "2024-02-14T16:22:15.945+0100",
         "customfield_10020": [
           {
@@ -1311,17 +2246,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": null,
+        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1333,8 +2268,8 @@
           }
         },
         "customfield_10019": "0|i0000v:",
-        "timeestimate": null,
         "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -1361,11 +2296,11 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": null,
+        "security": null,
         "customfield_10008": null,
-        "aggregatetimeestimate": null,
         "customfield_10009": null,
+        "aggregatetimeestimate": null,
         "summary": "Jira Rest API via nodejs library",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -1461,12 +2396,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
-        "lastViewed": "2024-02-14T17:01:08.652+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-2/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": "2024-02-14T17:01:08.652+0100",
         "created": "2024-02-14T12:08:04.210+0100",
         "customfield_10020": [
           {
@@ -1481,17 +2416,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": null,
+        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1531,8 +2466,8 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "customfield_10007": null,
         "security": null,
+        "customfield_10007": null,
         "customfield_10008": null,
         "aggregatetimeestimate": null,
         "customfield_10009": null,
@@ -1656,17 +2591,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": null,
+        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": "10003_*:*_1_*:*_1113518420_*|*_10005_*:*_1_*:*_0",
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1706,8 +2641,8 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": null,
+        "security": null,
         "customfield_10008": null,
         "customfield_10009": null,
         "aggregatetimeestimate": null,
