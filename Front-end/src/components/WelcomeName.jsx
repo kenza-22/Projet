@@ -1,4 +1,3 @@
-import Typography from "@mui/material/Typography";
 import { useMsal } from "@azure/msal-react";
 import { useState, useEffect } from "react";
 export const WelcomeName = () => {
@@ -12,5 +11,5 @@ export const WelcomeName = () => {
        SetUserName(currentAccount.name)
      }
     }, [instance]);
-    return (<Typography variant="h6">Welcome, {username}</Typography>);
+    return (<h1>Welcome, {username}</h1>);
 };

@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import { ThemeProvider } from '@mui/material/styles';
-import { theme } from "./styles/theme";
-
+import 'tailwindcss/tailwind.css';
 import { BrowserRouter } from "react-router-dom";
 
 import App from './App';
@@ -36,9 +33,7 @@ root.render(
     <React.StrictMode>
     <BrowserRouter>
       <MsalProvider instance={pca}> 
-        <ThemeProvider theme={theme}>
           <App /> 
-        </ThemeProvider>
       </MsalProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,5 +1,3 @@
-import Button from '@mui/material/Button';
-
 import {useMsal} from '@azure/msal-react';
 export const SignInButton = () => {
     const {instance} = useMsal();
@@ -10,6 +8,6 @@ export const SignInButton = () => {
         })
     }
     return (
-        <Button color="inherit" onClick={handleSignIn}>Sign in</Button>
+        <button className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900" onClick={handleSignIn}>Sign in</button>
     )
 };

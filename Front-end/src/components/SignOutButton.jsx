@@ -1,4 +1,3 @@
-import Button from '@mui/material/Button';
 import { useMsal } from '@azure/msal-react';
 export const SignOutButton = () => {
     const {instance} = useMsal();
@@ -7,6 +6,6 @@ export const SignOutButton = () => {
         instance.logoutRedirect();
     }
     return (
-        <Button color="inherit" onClick={handleSignOut}>Sign out</Button>
+        <button  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900" onClick={handleSignOut}>Sign out</button>
     )
 };

@@ -1,11 +1,12 @@
-import Grid from "@mui/material/Grid";
 import { Routes, Route, Outlet } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Profile } from "./pages/Profile";
 import NavBar from "./components/NavBar";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import 'tailwindcss/tailwind.css';
 import { useMsal } from "@azure/msal-react";
+import Landing from "./pages/Landing";
 export const UserContext = createContext();
 function App() {
     const [userGroups, setUserGroups] = useState(null);
@@ -50,14 +51,14 @@ function App() {
         );
     }
     return (
-        <Grid container justifyContent="center">
-            <Routes>
+               <Routes>
                 <Route element={<Layout />}>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/Home" element={<Home />} />
+                   <Route path="/" element={<Landing/>}/>
                     <Route path="/profile" element={<Profile />} />
                 </Route>
             </Routes>
-        </Grid>
+       
     );
 }
 
