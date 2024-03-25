@@ -1,44 +1,23 @@
+const issuesService = require('../Services/IssuesService');
 const fs = require('fs');
-var axios = require('axios');
 require('dotenv').config();
 
-const username = process.env.ATLASSIAN_USERNAME
-const password = process.env.ATLASSIAN_API_KEY
-const domain = process.env.DOMAIN
-
-const auth = {
-  username: username,
-  password: password
-};
-
-exports.getIssues= async (req,res) => {
-
+exports.getIssues = async (req, res) => {
   try {
+    const { ATLASSIAN_USERNAME, ATLASSIAN_API_KEY, DOMAIN } = process.env;
+    const issues = await issuesService.getIssues(ATLASSIAN_USERNAME, ATLASSIAN_API_KEY, DOMAIN);
 
-    const baseUrl = 'https://' + domain + '.atlassian.net';
-
-    const config = {
-      method: 'get',
-      url: baseUrl + '/rest/api/2/search',
-      headers: { 'Content-Type': 'application/json' },
-      auth: auth
-    };
-    const response = await axios.request(config);
-    
-    const jsonData = response.data;
-    const jsonString = JSON.stringify(jsonData, null, 2);
+    const jsonString = JSON.stringify(issues, null, 2);
     fs.writeFile('issues.json', jsonString, 'utf8', (err) => {
       if (err) {
         console.error('Erreur lors de l\'écriture du fichier :', err);
-        return;
+        return res.status(500).json({ error: 'Erreur lors de l\'écriture du fichier' });
       }
       console.log('Les données ont été écrites dans le fichier issues.json');
-      res.json(response.data);
+      res.json(issues);
     });
-
   } catch (error) {
     console.log('error: ', error)
     res.status(500).json({ error: error.message });
   }
-}
-
+};

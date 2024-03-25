@@ -66,13 +66,13 @@
         ],
         "customfield_10021": null,
         "customfield_10022": "2024-03-20",
-        "customfield_10023": "2024-03-27",
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
+        "customfield_10023": "2024-03-27",
         "customfield_10024": null,
         "customfield_10025": null,
         "labels": [],
@@ -124,15 +124,15 @@
           "value": "High",
           "id": "10008"
         },
+        "security": null,
         "customfield_10007": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/customFieldOption/10012",
           "value": "Upgrade",
           "id": "10012"
         },
-        "security": null,
         "customfield_10008": null,
-        "aggregatetimeestimate": 144000,
         "customfield_10009": null,
+        "aggregatetimeestimate": 144000,
         "summary": "yyyyyy",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -286,8 +286,8 @@
         "customfield_10023": "2024-03-31",
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": 4,
         "customfield_10017": null,
         "customfield_10018": {
@@ -497,8 +497,8 @@
         "customfield_10023": "2024-03-28",
         "customfield_10024": null,
         "customfield_10025": null,
-        "customfield_10026": null,
         "labels": [],
+        "customfield_10026": null,
         "customfield_10016": 3,
         "customfield_10017": null,
         "customfield_10018": {
@@ -510,8 +510,8 @@
           }
         },
         "customfield_10019": "0|i0005b:",
-        "aggregatetimeoriginalestimate": 288000,
         "timeestimate": 288000,
+        "aggregatetimeoriginalestimate": 288000,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -711,12 +711,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": 0,
+        "lastViewed": "2024-03-15T11:43:45.593+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-11/watchers",
           "watchCount": 1,
           "isWatching": true
         },
-        "lastViewed": "2024-03-15T11:43:45.593+0100",
         "created": "2024-03-15T11:42:38.647+0100",
         "customfield_10020": [
           {
@@ -740,8 +740,8 @@
         "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": null,
-        "customfield_10026": null,
         "labels": [],
+        "customfield_10026": null,
         "customfield_10016": 3,
         "customfield_10017": null,
         "customfield_10018": {
@@ -795,8 +795,8 @@
         "customfield_10015": "2024-03-05",
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": null,
+        "security": null,
         "customfield_10008": null,
         "aggregatetimeestimate": 144000,
         "customfield_10009": null,
@@ -919,13 +919,13 @@
         "customfield_10020": null,
         "customfield_10021": null,
         "customfield_10022": null,
-        "customfield_10023": null,
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
+        "customfield_10023": null,
         "customfield_10024": null,
         "customfield_10025": "10008_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_44633",
         "labels": [],
@@ -969,11 +969,11 @@
         "customfield_10015": "2024-03-07",
         "customfield_10005": null,
         "customfield_10006": null,
-        "customfield_10007": null,
         "security": null,
+        "customfield_10007": null,
         "customfield_10008": null,
-        "aggregatetimeestimate": null,
         "customfield_10009": null,
+        "aggregatetimeestimate": null,
         "summary": "mpoj",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -1069,12 +1069,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": -1,
+        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-9/watchers",
           "watchCount": 1,
           "isWatching": true
         },
-        "lastViewed": null,
         "created": "2024-03-15T11:40:14.540+0100",
         "customfield_10020": [
           {
@@ -1098,8 +1098,8 @@
         },
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": null,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1111,8 +1111,8 @@
           }
         },
         "customfield_10019": "0|i00047:",
-        "aggregatetimeoriginalestimate": 144000,
         "timeestimate": null,
+        "aggregatetimeoriginalestimate": 144000,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -1139,11 +1139,11 @@
         "customfield_10015": "2024-03-06",
         "customfield_10005": null,
         "customfield_10006": null,
-        "customfield_10007": null,
         "security": null,
+        "customfield_10007": null,
         "customfield_10008": null,
-        "aggregatetimeestimate": 144000,
         "customfield_10009": null,
+        "aggregatetimeestimate": 144000,
         "summary": "kkjjk",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -1245,12 +1245,12 @@
         "customfield_10029": null,
         "resolutiondate": "2024-03-15T11:38:51.700+0100",
         "workratio": 0,
-        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/TEST-8/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": null,
         "created": "2024-03-15T11:37:48.021+0100",
         "customfield_10020": [
           {
@@ -1287,8 +1287,8 @@
           }
         },
         "customfield_10019": "0|i0003z:",
-        "aggregatetimeoriginalestimate": 288000,
         "timeestimate": 288000,
+        "aggregatetimeoriginalestimate": 288000,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -1330,8 +1330,8 @@
         },
         "security": null,
         "customfield_10008": null,
-        "customfield_10009": null,
         "aggregatetimeestimate": 288000,
+        "customfield_10009": null,
         "summary": "lllllll",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -1462,12 +1462,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": 0,
+        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-22/watchers",
           "watchCount": 1,
           "isWatching": true
         },
-        "lastViewed": null,
         "created": "2024-03-18T12:23:01.143+0100",
         "customfield_10020": [
           {
@@ -1482,17 +1482,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": "2024-03-13",
-        "customfield_10023": "2024-03-26",
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
+        "customfield_10023": "2024-03-26",
         "customfield_10024": null,
         "customfield_10025": null,
-        "labels": [],
         "customfield_10026": null,
+        "labels": [],
         "customfield_10016": 5,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1504,8 +1504,8 @@
           }
         },
         "customfield_10019": "0|i0005r:",
-        "aggregatetimeoriginalestimate": 345600,
         "timeestimate": 345600,
+        "aggregatetimeoriginalestimate": 345600,
         "versions": [],
         "issuelinks": [],
         "assignee": {
@@ -1693,12 +1693,12 @@
         "customfield_10029": null,
         "resolutiondate": null,
         "workratio": 0,
-        "lastViewed": null,
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-21/watchers",
           "watchCount": 1,
           "isWatching": true
         },
+        "lastViewed": "2024-03-22T10:06:38.739+0100",
         "created": "2024-03-18T10:34:39.650+0100",
         "customfield_10020": [
           {
@@ -1713,17 +1713,17 @@
         ],
         "customfield_10021": null,
         "customfield_10022": "2024-03-20",
+        "customfield_10023": "2024-03-27",
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/4",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/low.svg",
           "name": "Low",
           "id": "4"
         },
-        "customfield_10023": "2024-03-27",
         "customfield_10024": null,
         "customfield_10025": null,
-        "customfield_10026": null,
         "labels": [],
+        "customfield_10026": null,
         "customfield_10016": 3,
         "customfield_10017": null,
         "customfield_10018": {
@@ -1735,8 +1735,8 @@
           }
         },
         "customfield_10019": "0|i00053:",
-        "aggregatetimeoriginalestimate": 144000,
         "timeestimate": 144000,
+        "aggregatetimeoriginalestimate": 144000,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -1774,8 +1774,8 @@
           "id": "10012"
         },
         "customfield_10008": null,
-        "aggregatetimeestimate": 144000,
         "customfield_10009": null,
+        "aggregatetimeestimate": 144000,
         "summary": "buug",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
@@ -1907,12 +1907,12 @@
         "customfield_10029": null,
         "resolutiondate": "2024-03-18T12:23:10.505+0100",
         "workratio": 0,
+        "lastViewed": "2024-03-15T13:53:54.461+0100",
         "watches": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/issue/CON-20/watchers",
           "watchCount": 1,
           "isWatching": true
         },
-        "lastViewed": "2024-03-15T13:53:54.461+0100",
         "created": "2024-03-15T13:53:44.497+0100",
         "customfield_10020": [
           {
@@ -1927,13 +1927,13 @@
         ],
         "customfield_10021": null,
         "customfield_10022": "2024-03-12",
+        "customfield_10023": "2024-03-27",
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
-        "customfield_10023": "2024-03-27",
         "customfield_10024": null,
         "customfield_10025": "10003_*:*_1_*:*_253766028_*|*_10005_*:*_1_*:*_0",
         "labels": [],
@@ -1977,12 +1977,12 @@
         "customfield_10015": null,
         "customfield_10005": null,
         "customfield_10006": null,
-        "security": null,
         "customfield_10007": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/customFieldOption/10012",
           "value": "Upgrade",
           "id": "10012"
         },
+        "security": null,
         "customfield_10008": null,
         "aggregatetimeestimate": 288000,
         "customfield_10009": null,
@@ -2137,19 +2137,19 @@
         ],
         "customfield_10021": null,
         "customfield_10022": "2024-03-05",
-        "customfield_10023": "2024-03-14",
         "priority": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/priority/3",
           "iconUrl": "https://kenzabaccar6.atlassian.net/images/icons/priorities/medium.svg",
           "name": "Medium",
           "id": "3"
         },
+        "customfield_10023": "2024-03-14",
         "customfield_10024": null,
         "customfield_10025": "10003_*:*_1_*:*_261901567_*|*_10005_*:*_1_*:*_0",
+        "customfield_10026": null,
         "labels": [
           "panne"
         ],
-        "customfield_10026": null,
         "customfield_10016": 2,
         "customfield_10017": null,
         "customfield_10018": {
@@ -2161,8 +2161,8 @@
           }
         },
         "customfield_10019": "0|i0003r:",
-        "aggregatetimeoriginalestimate": 316800,
         "timeestimate": 316800,
+        "aggregatetimeoriginalestimate": 316800,
         "versions": [],
         "issuelinks": [],
         "assignee": null,
@@ -2204,8 +2204,8 @@
           "id": "10013"
         },
         "customfield_10008": null,
-        "aggregatetimeestimate": 316800,
         "customfield_10009": null,
+        "aggregatetimeestimate": 316800,
         "summary": "hhhh",
         "creator": {
           "self": "https://kenzabaccar6.atlassian.net/rest/api/2/user?accountId=712020%3A07b86da1-ca42-4f64-92dc-fd195a749aa1",
